@@ -1,0 +1,10 @@
+<script>
+    function validateForm() {
+        var animal = document.getElementById("animal").value;
+        if (animal == "") {
+            alert("Please enter your favorite animal.");
+            return false;
+        }
+    }
+</script>
+<form action="/result" method="POST" onsubmit="return validateForm()">
